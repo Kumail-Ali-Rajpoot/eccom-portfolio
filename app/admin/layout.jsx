@@ -23,16 +23,15 @@ function Layout({ children }) {
         >
           <Menu />
         </div>
-        <h1 className="text-center leading-tight font-bold md:text-4xl sm:text-2xl text-blue-700 border-b-2 border-blue-700">
-          HalcyonAli
+        <h1 className="text-center leading-tight font-bold md:text-4xl sm:text-2xl text-blue-500 ">
+          Settings
         </h1>
         <div className="top-3.5 relative">
           {[
             'Admin',
-            'Add Products',
-            'Manage Products',
-            'Edit Products',
-            'Remove Products',
+            'Management',
+            'Orders',
+            'Contact Message'
           ].map((item) => (
             <p
               key={item}
