@@ -13,14 +13,15 @@ export default function PromoCode({adminConfirmation}) {
     }else if(code.trim().toLowerCase() === "admin786") {
       localStorage.setItem("admin","true")
       setStatus("success");
-      adminConfirmation(status);
+      adminConfirmation(true);
       setMessage("👑 Welcome to halcyon owner 🧑‍💼! Add products 🛒, remove products🗑️, edit products📝, according to your wish.");
     } else {
       localStorage.setItem("admin","false")
       setStatus("error");
-      adminConfirmation(status);
+      adminConfirmation(false);
       setMessage("❌ Invalid promo code. Please try again.");
     }
+    console.log("handle apply function call");
   };
   useEffect(()=>{
     let adminStatus = localStorage.getItem("admin");

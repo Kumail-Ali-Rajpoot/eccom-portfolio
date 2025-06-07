@@ -57,7 +57,7 @@ export default function ContactPage() {
         </form>
 
         <p className="mt-12 text-sm text-gray-500">
-          📧 You can also reach us directly at <span className="text-blue-600">support@portfolio.com</span>
+          📧 You can also reach us directly at <span className="text-blue-600">support@halcyonali.com</span>
         </p>
       </div>
     </main>

@@ -46,7 +46,7 @@ export default function Page() {
         </div>
 
         <p className="mt-12 text-gray-500 text-sm">
-          Built with ❤️ by Portfolio. All rights reserved.
+          Built with ❤️ by HalcyonAli. All rights reserved.
         </p>
       </div>
     </main>

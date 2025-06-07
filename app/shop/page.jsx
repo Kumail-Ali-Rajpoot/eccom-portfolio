@@ -51,7 +51,7 @@ export default function Page() {
     <main className="bg-gray-50 min-h-screen py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
-          🛍️ Shop Portfolio
+          🛍️ Shop HalcyonAli Utils
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">

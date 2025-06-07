@@ -1,6 +1,25 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.set-animation {
+  transition: 1s ease-in all;
+}
+.animate-to-right {
+  left: 0px;
+}
+.animate-to-left {
+  left: -300px;
+}
+@media (max-width: 768) {
+  .animate-to-left {
+    left: -250px;
+  }
+}
+@media (max-width: 640) {
+  .animate-to-left {
+    left: -200px;
+  }
+}
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

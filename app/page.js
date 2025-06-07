@@ -7,17 +7,14 @@ import PromoCode from "@/components/promo";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { useEffect,useState } from "react";
+import { Inbox } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const [admin,setAdmin] = useState(false);
   function handleClick (value) {
-    if(value === "success") {
-      setAdmin(true);
-      console.log("Welcome kumail ali rajpoot");
-    }else {
-      console.log("you are no admin");
-      setAdmin(false)
-    }
+    setAdmin(value);
+    console.log("handle click function call")
   }
 
   return (
@@ -29,10 +26,12 @@ export default function Home() {
           <h3 className="font-bold text-2xl text-gray-800 capitalize leading-tight">
             Recent Products
           </h3>
-           {admin?<Button>Add Product</Button>:""}
           
           <div className='grid md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]'>
             <ProductCard></ProductCard>
+          </div>
+          <div className="w-[100%] flex justify-center">
+           {admin?<Button className="w-[50%] cursor-pointer"><Link href="/admin" className="flex items-center gap-1.5">Add Product <Inbox size={34} color="#ffff"/></Link></Button>:""}
           </div>
         </div>
       <Scroller></Scroller>
